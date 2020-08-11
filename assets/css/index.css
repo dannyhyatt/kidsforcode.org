@@ -7,6 +7,14 @@ body, h1, h2, h3 {
     font-family: 'Lulo', Arial, sans-serif !important;
 }
 
+h3 {
+    letter-spacing: -0.10em;
+}
+
+a {
+    color: rgb(69, 63, 186);
+}
+
 .text-shadow {
     color: rgb(19, 13, 76);
     text-shadow: rgba(10, 189, 240, 0.298039) 2px 2px 0, rgba(254, 1, 1, 0.298039) -2px -2px 0;
@@ -25,13 +33,21 @@ body, h1, h2, h3 {
         text-shadow: rgba(10, 189, 240, 0.898039) 4px 0 0, rgba(254, 1, 1, 0.598039) -4px 0 0;
     }
     100% {
-        color: 100%;
+        color: #000;
     }
 }
 
 p {
     font-family: 'Lato', Arial, sans-serif;
     font-size: 1.2em;
+}
+
+.w80 {
+    width: 80%;
+}
+
+.w20 {
+    width: 20%;
 }
 
 /* animation boilerplate */
