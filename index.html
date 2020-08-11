@@ -9,10 +9,24 @@ Hope you like my source code!
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function () {
+			$('.first-button').on('click', function () {
+				$('.animated-icon1').toggleClass('open');
+			});
+		});
+	</script>
+
 	<title>Home | Kids For Code</title>
+
+	<!-- style assets -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/assets/css/index.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 
 	<!-- for SEO -->
 	<meta name="description" content="Kids For Code is an organization composed of high school programmers dedicated to teaching younger kids how to code.">
@@ -21,17 +35,67 @@ Hope you like my source code!
 	<meta charset=UTF-8">
 </head>
 <body>
+<nav class="navbar navbar-light amber lighten-4 py-0 position-fixed fixed-top bg-light hide-for-big">
+
+	<a class="navbar-brand" href="#"><img src="/assets/img/logo.png"></a>
+
+	<button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+			aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+		<div class="animated-icon1"><span></span><span></span><span></span></div>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent20">
+
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="index.html">Home</a><br>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Enroll</a><br>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Testimonials & Past Sessions</a><br>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Meet our teachers</a><br>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Become a teacher</a><br>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Donate</a><br>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Contact</a><br>
+			</li>
+		</ul>
+
+	</div>
+</nav>
+<img class="hide-for-big" src="/assets/img/logo.png" style="visibility: hidden">
 <div class="jumbotron jumbotron-fluid text-center">
-	<div class="container container-fluid justify-content-center">
-		<div class="offset-md-3 col-md-6 justify-content-center">
+	<div class="container container-fluid justify-content-center d-flex">
+		<div class="offset-md-1 col-md-7 justify-content-center divider-right">
 			<h1 class="mt-5" id="title-text">Kids For Code</h1>
 			<h5 class="text-shadow mt-4">Free virtual classes and resources from volunteer high school programmers for children aged five to fifteen</h5>
-			<h6 class="my-5"><a href="/signup" class="underline-animation">Join more than 300 students in learning with Kids For Code</a></h6>
+			<h6 class="my-5"><a href="/signup" class="underline-animation">Join more than 300 students in learning with Kids For Code ></a></h6>
+			<span class="mt-3 d-block hide-for-big"><a href="https://www.instagram.com/kidsforcode/"><img class="inline-icon" style="height: 2.8em" src="https://img.icons8.com/officel/80/000000/instagram-new.png"/></a> <a href="https://www.youtube.com/channel/UCQ2a-5B2bV70rfiylv_ocvA?view_as=subscriber"><img class='inline-icon' style="height: 3.2em" src="https://img.icons8.com/dusk/64/000000/youtube-play.png"/></a></span>
+		</div>
+		<div class="col-md-4 jumbotron-links-list hide-for-small">
+			<h2 class="list-header mt-5 mb-3">Quick Links</h2>
+			<a href="index.html">Enroll</a><br>
+			<a href="index.html">Testimonials</a><br>
+			<a href="index.html">Past Sessions</a><br>
+			<a href="index.html">Meet our teachers</a><br>
+			<a href="index.html">Become a teacher</a><br>
+			<a href="index.html">Donate</a><br>
+			<a href="index.html">Contact</a><br>
+			<span class="mt-3 d-block"><a href="https://www.instagram.com/kidsforcode/"><img class="inline-icon" style="height: 2.1em" src="https://img.icons8.com/officel/80/000000/instagram-new.png"/></a> <a href="https://www.youtube.com/channel/UCQ2a-5B2bV70rfiylv_ocvA?view_as=subscriber"><img class='inline-icon' src="https://img.icons8.com/dusk/64/000000/youtube-play.png"/></a></span>
 		</div>
 	</div>
 </div>
 <div class="container">
-	<h2 class="text-center mt-5 mx-5">Why Kids for Code?</h2>
+	<h2 class="text-center pt-5 mt-5 mx-5">Why Kids for Code?</h2>
 	<p class="long-description mb-5 text-center col-md-8 offset-md-2">
 		We are a small group of passionate high school student programmers
 		from Montgomery County, Maryland. We each have years of programming
@@ -42,22 +106,22 @@ Hope you like my source code!
 		patience and good practice. Learn about our well-organized class
 		structure below.
 	</p>
-	<div class="row mt">
-		<div class="col-md-4">
+	<div class="row">
+		<div class="col-md-4 mt-5">
 			<div class="row m-0">
 				<span class="w20"><img src="https://img.icons8.com/dusk/64/000000/zoom.png"/></span>
 				<h3 class="w80">Virtual Classes</h3>
 			</div>
 			<p>Via Zoom, we host one hour classes on the weekend, typically with three teachers per class. We utilize Zoom's "breakout room" feature, so students or small groups of students with a niche problem can receive help separate from the main class, then return to class.</p>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-4 mt-5">
 			<div class="row m-0">
 				<span class="w20"><img src="https://img.icons8.com/dusk/64/000000/google-classroom.png"/></span>
 				<h3 class="w80" style="padding-left: 4px">Google Classroom</h3>
 			</div>
 			<p>We use Google Classroom to communicate with our students. Google Classroom makes it easy to keep track of assignments, organize our teacher-made resources and notify students of anything (like Zoom links or discussion boards for out-of-class help).</p>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-4 mt-5">
 			<div class="row m-0">
 				<span class="w20"><img src="https://img.icons8.com/dusk/64/000000/property-script.png"/></span>
 				<h3 class="w80">Custom Curriculum</h3>
