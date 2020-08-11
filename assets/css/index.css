@@ -20,7 +20,7 @@ a {
     text-shadow: rgba(10, 189, 240, 0.298039) 2px 2px 0, rgba(254, 1, 1, 0.298039) -2px -2px 0;
 }
 
-#title-text:hover {
+#title-text, #title-text:hover, #title-text:active, #title-text:focus {
     animation: pulse 0.5s ease-in-out;
 }
 
