@@ -92,6 +92,15 @@ p {
     filter: brightness(0.95) saturate(1.95);
 }
 
+#top-jumbotron {
+    background-image: url("/assets/img/code-background.webp");
+    background-size: cover;
+}
+
+#inner-jumbotron {
+    background-color: #fffd;
+}
+
 /* responsiveness */
 @media (max-width: 768px) {
     .divider-right {
@@ -103,6 +112,21 @@ p {
     }
     .hide-for-small {
         display: none;
+    }
+    #inner-jumbotron {
+        /*background-color: #fffb;*/
+        background-color: #0000;
+    }
+    #inner-jumbotron h1, h5, h6, a {
+        color: #fff;
+        animation: unset;
+    }
+    .text-shadow {
+        color: #fff;
+        text-shadow: rgba(10, 189, 240, 0.298039) 2px 2px 0, rgba(254, 1, 1, 0.298039) -2px -2px 0;
+    }
+    .inline-icon {
+        filter: brightness(0.85) saturate(1.6);
     }
 }
 
