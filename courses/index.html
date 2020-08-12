@@ -1,0 +1,146 @@
+<!--
+
+Hey, I'm Danny - I made this website. If you'd be interested in hiring me, check out https://dannyhyatt.com
+If you'd like to learn about the other teachers, check out https://kidsforcode.org/teachers
+Hope you like my source code!
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home | Kids For Code</title>
+
+    <!-- for SEO -->
+    <meta name="description" content="Kids For Code is an organization composed of high school programmers dedicated to teaching younger kids how to code.">
+    <meta name=”robots” content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=UTF-8">
+
+    <!-- style assets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <!-- a crazy amount of javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.first-button').on('click', function () {
+                $('.animated-icon1').toggleClass('open');
+            });
+        });
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-light amber lighten-4 py-0 position-fixed fixed-top bg-light hide-for-big">
+
+    <a class="navbar-brand" href="#"><img src="/assets/img/logo.png"></a>
+
+    <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+            aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="animated-icon1"><span></span><span></span><span></span></div>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a><br>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/courses">Course List</a><br>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/enroll">Enroll</a><br>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/testimonials-past-sessions">Testimonials & Past Sessions</a><br>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/teachers">Meet our teachers</a><br>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/teach">Become a teacher</a><br>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/donate">Donate</a><br>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a><br>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-light amber lighten-4 py-0 position-fixed fixed-top bg-light hide-for-small">
+
+    <a class="navbar-brand" href="#"><img src="/assets/img/logo.png"></a>
+
+    <div class="horizontal-navbar" style="width: calc(100% - 128px); text-align: center;">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link active" href="/courses">Course List</a>
+        <a class="nav-link" href="/enroll">Enroll</a>
+        <a class="nav-link" href="/testimonials-past-sessions">Testimonials & Past Sessions</a>
+        <a class="nav-link" href="/teachers">Meet our teachers</a>
+        <a class="nav-link" href="/teach">Become a teacher</a>
+        <a class="nav-link" href="/donate">Donate</a>
+        <a class="nav-link" href="/contact">Contact</a>
+    </div>
+</nav>
+
+<div class="navbar-spacer p-5"><img src="/assets/img/logo.png"></div>
+
+<div class="container">
+    <div class="col-md-12">
+        <h1>Course List</h1>
+        <p>to see class times, check out the <a href="#">bottom of this page.</a></p>
+        <hr class="mb-5">
+        <div class="class-info">
+            <h2>Web Development (with HTML & CSS)</h2>
+            <p>
+                <b>What is web development?</b>
+                Web development is the field of creating websites.<br>
+                <b>What courses are offered?</b>
+                Web development 1A (recommended for ages 6-9) and 1AB (recommended for ages 10-15) are offered.<br>
+                <b>What is taught in this course?</b>
+                This course will cover the basics on how to create static (no Javascript) web pages. This includes images, paragraphs, lists, and basic CSS styling.<br>
+                <b>Who uses HTML & CSS?</b>
+                <i>All</i> websites are composed of HTML & CSS. Google, Facebook, and all companies with a website use them. Even this website was hand-coded by one
+                of our teachers.<br>
+            </p>
+        </div>
+        <div class="class-info">
+            <h2>Python</h2>
+            <p>
+                <b>What is Python?</b>
+                Python is a general purpose scripting language typed used heavily in the data science, AI, and website backend fields of programming.<br>
+                <b>What courses are offered?</b>
+                Python 1A (recommended for ages 6-10), Python 1AB (recommended for ages 11-15), and Python 2 (recommended to take after Python 1AB) are offered.<br>
+                <b>What is taught in this course?</b>
+                This course will cover how to implement basic programming concepts (such as printing to the screen and control flow) in the Python programming language.<br>
+                <b>Who uses Python?</b>
+                Python is used by Google Search, Wikipedia, Spotify and NASA.<br>
+            </p>
+        </div>
+        <div class="class-info">
+            <h2>Java</h2>
+            <p>
+                <b>What is Java?</b>
+                Java is a general purpose compiled language which is used typically to write backend servers, desktop applications, and creating Android apps.<br>
+                <b>What courses are offered?</b>
+                Java 1A (recommended for ages 7-11), Java 1AB (recommended for ages 12-15), and Java 2 (recommended to take after Java 1AB) are offered.<br>
+                <b>What is taught in this course?</b>
+                This course will cover how to implement basic programming concepts (such as printing to the screen and control flow) in the Java programming language.<br>
+                <b>Who uses Java?</b>
+                Java is used by Google, Uber, Netflix, and Mojang (for Minecraft).<br>
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

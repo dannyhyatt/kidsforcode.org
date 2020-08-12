@@ -1,0 +1,133 @@
+<!--
+
+Hey, I'm Danny - I made this website. If you'd be interested in hiring me, check out https://dannyhyatt.com
+If you'd like to learn about the other teachers, check out https://kidsforcode.org/teachers
+Hope you like my source code!
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home | Kids For Code</title>
+
+    <!-- for SEO -->
+    <meta name="description" content="Kids For Code is an organization composed of high school programmers dedicated to teaching younger kids how to code.">
+    <meta name=”robots” content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=UTF-8">
+
+    <!-- style assets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <!-- a crazy amount of javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.first-button').on('click', function () {
+                $('.animated-icon1').toggleClass('open');
+            });
+        });
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-light amber lighten-4 py-0 position-fixed fixed-top bg-light hide-for-big">
+
+    <a class="navbar-brand" href="#"><img src="/assets/img/logo.png"></a>
+
+    <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+            aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="animated-icon1"><span></span><span></span><span></span></div>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a><br>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/courses">Course List</a><br>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/enroll">Enroll</a><br>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/testimonials-past-sessions">Testimonials & Past Sessions</a><br>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/teachers">Meet our teachers</a><br>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/teach">Become a teacher</a><br>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/donate">Donate</a><br>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a><br>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-light amber lighten-4 py-0 position-fixed fixed-top bg-light hide-for-small">
+
+    <a class="navbar-brand" href="#"><img src="/assets/img/logo.png"></a>
+
+    <div class="horizontal-navbar" style="width: calc(100% - 128px); text-align: center;">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/courses">Course List</a>
+        <a class="nav-link active" href="/enroll">Enroll</a>
+        <a class="nav-link" href="/testimonials-past-sessions">Testimonials & Past Sessions</a>
+        <a class="nav-link" href="/teachers">Meet our teachers</a>
+        <a class="nav-link" href="/teach">Become a teacher</a>
+        <a class="nav-link" href="/donate">Donate</a>
+        <a class="nav-link" href="/contact">Contact</a>
+    </div>
+</nav>
+
+<div class="navbar-spacer p-5"><img src="/assets/img/logo.png"></div>
+
+<div class="container">
+    <div class="col-md-12">
+        <h1>Enroll</h1>
+        <p>This page will submit your answers to a Google Form. To fill out the form directly, <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyhxKVq5ScbgDFWIOXIxC31NWq-pK5a5n-UvZQdnFs1KYTvA/viewform">click here.</a></p>
+        <hr class="mb-5">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSeyhxKVq5ScbgDFWIOXIxC31NWq-pK5a5n-UvZQdnFs1KYTvA/formResponse">
+
+            <label for="emailAddr">Email:</label>
+            <input type="email" id="emailAddr" placeholder="you@email.com" name="emailAddress"><br>
+
+            <label for="fullname">Name (First and Last):</label>
+            <input type="text" id="fullname" placeholder="My Name" name="entry.1495702265"><br>
+
+            <label for="grade">Grade (Going into the 2020-2021 school year):</label>
+            <input type="number" id="grade" placeholder="Grade Level" name="entry.1316887184"><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Current Age" name="entry.1320209592"><br>
+
+            <label>Question 1:</label><br>
+            Option 1: <input type="radio" name="entry.671581483" value="Option 1"><br>
+            Option 2: <input type="radio" name="entry.671581483" value="Option 2"><br>
+
+            <label for="state">What state are you from?</label>
+            <select id="state" name="entry.1471339600">
+                <option value="Option 1">Option 1</option>
+                <option value="Option 2">Option 2</option>
+            </select>
+
+            <input type="Submit" value="Submit">
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
