@@ -113,16 +113,9 @@ p {
     font-size: 14px;
 }
 
-.nav-link {
-    border: 1px solid transparent;
-}
-
-.nav-link:hover {
-    border: 1px solid black;
-}
-
 .active, .active:hover {
-    border: none;
+    border: none !important;
+    text-decoration: underline;
 }
 
 .horizontal-navbar .active {
@@ -139,6 +132,21 @@ p {
 
 input[type=text], input[type=email] {
     font-family: 'Lato', Arial, sans-serif;
+}
+
+iframe {
+    height: 1000px;
+    width: 100%;
+}
+
+.teacher-info h4, .teacher-info p {
+    width: 100%;
+    align-self: center;
+}
+
+.teacher-info {
+    display: inline-flex !important;
+    align-items: center;
 }
 
 /* responsiveness */
@@ -169,6 +177,9 @@ input[type=text], input[type=email] {
     .inline-icon {
         filter: brightness(0.25) saturate(1.5) brightness(3.5) saturate(1.5);
     }
+    .teacher-profile {
+        display: block;
+    }
 }
 
 @media (min-width: 768px) {
@@ -176,7 +187,18 @@ input[type=text], input[type=email] {
         display: none !important;
     }
     .invisible-for-big {
-        visibility: none !important;
+        visibility: hidden !important;
+    }
+
+    .nav-link {
+        border: 1px solid transparent;
+    }
+
+    .nav-link:hover {
+        border: 1px solid black;
+    }
+    .teacher-profile {
+        display: inline-flex;
     }
 }
 
