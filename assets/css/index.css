@@ -109,7 +109,7 @@ p {
 }
 
 #top-jumbotron {
-    background-image: url("/assets/img/code-background.webp");
+    background-image: url("/assets/img/code-background.webp"), url("/assets/img/code-background.png");
     background-size: cover;
 }
 
