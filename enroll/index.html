@@ -95,9 +95,14 @@ Hope you like my source code!
 <div class="navbar-spacer p-5"><img src="/assets/img/logo.png"></div>
 
 <div class="container form-container">
+
+    <h1>Enroll</h1>
+    <p class="caption">The data submitted here will be sent to a Google Form. To fill out this form directly, <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyhxKVq5ScbgDFWIOXIxC31NWq-pK5a5n-UvZQdnFs1KYTvA/viewform">click here.</a><br>All fields required.</p>
+    <hr class="mb-5">
+
     <form action="https://docs.google.com/forms/d/e/1FAIpQLSeyhxKVq5ScbgDFWIOXIxC31NWq-pK5a5n-UvZQdnFs1KYTvA/formResponse">
 
-        <label for="emailAddr">Your Email:</label>
+        <label for="emailAddr">Your Email*:</label>
         <input type="email" id="emailAddr" placeholder="you@email.com" name="emailAddress" class="form-control"><br>
 
         <label for="fullname">Student's Name (First and Last):</label>
@@ -187,14 +192,13 @@ Hope you like my source code!
             <input type="radio" name="entry.1578982446" value="Java 2">Java 2<br>
             <input type="radio" name="entry.1578982446" value="Python 1A">Python 1A<br>
             <input type="radio" name="entry.1578982446" value="Python 1AB">Python 1AB<br>
-            <p class="caption">*please fill out form once for each class you want the student to take</p>
+            <p class="caption" style="font-size: 16px">* please fill out this form once for each class you want the student to take</p>
         </div>
 
-        <label for="etc">If you have any questions, comments, etc. please leave them here. Please also specify your country here if you are not from the US.</label>
+        <label for="etc">If you have any questions, comments, etc. please leave them here. Please also specify your country here if you are not from the US. (Optional)</label>
         <input type="text" id="etc" placeholder="" name="entry.1977108395" class="form-control"><br>
 
         <input type="Submit" value="Submit" class="form-control">
-        <p class="caption">The data submitted here will be sent to a Google Form.</p>
 
     </form>
 </div>
