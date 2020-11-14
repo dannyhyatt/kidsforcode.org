@@ -8,6 +8,10 @@ body, h1, h2, h3, .form-group label {
     font-family: 'Lulo', Arial, sans-serif;
 }
 
+.form-group label {
+    margin-top: 1em;
+}
+
 h3 {
     letter-spacing: -0.10em;
 }
@@ -154,6 +158,13 @@ input[type=text], input[type=email], input[type=number] {
     margin-bottom: 1.5em;
     font-size: 18px;
     vertical-align: top;
+}
+
+.class-name {
+    font-family: 'Lato', Arial, sans-serif !important;
+    font-size: 18px !important;
+    font-weight: normal;
+    margin-top: 2px !important;
 }
 
 iframe {
