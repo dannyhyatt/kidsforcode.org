@@ -527,3 +527,11 @@ iframe {
         --s: .5;
     }
 }
+
+#submit-btn {
+  transition: background-color 0.5s;
+}
+
+#submit-btn:focus, #submit-btn:active, #submit-btn:hover {
+  background-color: lightgrey;
+}
